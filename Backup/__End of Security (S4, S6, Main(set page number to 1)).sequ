@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://ns.adobe.com/acrobat/workflow/2012" title="__End of Security (S4, S6, Main)" description="" majorVersion="1" minorVersion="0">
+	<Sources defaultCommand="WorkflowPlaybackSelectFolder">
+		<Folder path="/C/Users/A Term/Desktop/Gaz_PDF"/>
+	</Sources>
+	<Group label="Bookmark">
+		<Command name="JavaScript" pauseBefore="false" promptUser="false">
+			<Items>
+				<Item name="ScriptCode" type="text" value="if(this.title.substring(1, 3) === &quot;gn&quot;){&#xD;&#xA;  this.setPageLabels(0, [&quot;D&quot;, &quot;&quot;, 9])&#xD;&#xA;}"/>
+				<Item name="ScriptName" type="text" value=""/>
+			</Items>
+		</Command>
+		<Command name="DocSecurity" pauseBefore="false" promptUser="false">
+			<Items>
+				<Item name="CryptHandler" type="atom" value="Standard"/>
+				<Items name="SecuritySettings">
+					<Item name="EncryptAttachmentsOnly" type="boolean" value="false"/>
+					<Item name="EncryptionMethod" type="integer" value="6"/>
+					<Item name="HasOwnerPW" type="boolean" value="true"/>
+					<Item name="HasUserPW" type="boolean" value="false"/>
+					<Item name="KeyLength" type="integer" value="16"/>
+					<Item name="OwnerPW" type="string" value="$Ev@jV%3ZBpu=c9P"/>
+					<Item name="PDPerms" type="integer" value="2564"/>
+					<Item name="PlaintextMetadata" type="boolean" value="false"/>
+					<Item name="Revision" type="integer" value="4"/>
+					<Item name="Version" type="integer" value="4"/>
+				</Items>
+			</Items>
+		</Command>
+		<Command name="WorkflowPlaybackSaveFiles" pauseBefore="false" promptUser="false">
+			<Items>
+				<Item name="AddToBaseName" type="boolean" value="false"/>
+				<Item name="DocSaveDestType" type="string" value="WorkflowPlaybackSaveInAFolder"/>
+				<Item name="DontOverwrite" type="boolean" value="true"/>
+				<Item name="EmbedIndex" type="boolean" value="false"/>
+				<Item name="FS" type="atom" value="DOS"/>
+				<Item name="FileVariation" type="integer" value="0"/>
+				<Item name="HandleOutput" type="boolean" value="true"/>
+				<Item name="InsertAfterBaseName" type="text" value=""/>
+				<Item name="InsertBeforeBaseName" type="text" value=""/>
+				<Item name="NumbericNaming" type="boolean" value="false"/>
+				<Item name="OptimizePDF" type="boolean" value="true"/>
+				<Item name="PreselectedFolderPath" type="text" value="/C/Users/A Term/Desktop/Gaz_PDF"/>
+				<Item name="PresetName" type="text" value="embed font"/>
+				<Item name="RunPDFOptimizer" type="boolean" value="false"/>
+			</Items>
+		</Command>
+	</Group>
+</Workflow>
